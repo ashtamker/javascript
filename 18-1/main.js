@@ -1,5 +1,21 @@
-const number = document.querySelector('.num').value;
-const print = document.querySelector('.smiley');
 
+const btn = document.querySelector('.btn');
+const printSmile = document.querySelector('.smiley');
+const num = document.querySelector('.num');
 
-console.log(number);
+btn.addEventListener('click', () => {
+        const input = parseInt(num.value);
+        printSmile.innerHTML = "";
+         if(isNaN(input)){
+            document.querySelector('.msg').innerHTML = "wrong";
+        }
+         else{
+            for(let i = 0; i < input; i++){
+                let img = document.createElement("img");
+                img.src = "./smileyFace.jpg"
+                let li = document.createElement("li");
+                li.appendChild(img);
+                printSmile.appendChild(li);
+            }
+        }
+    });

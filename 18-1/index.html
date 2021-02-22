@@ -1,16 +1,43 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+        body {
+            width: 1780px;
+        }
+        span {
+            display: block;
+            padding-bottom: 15px;
+        }
+        input {
+            width: 200px;
+            height: 25px;
+        }
+        ul {
+            display: flex;
+            list-style: none;
+        }
+        ul li img {
+            height: 100px;
+            width: 100px;
+            margin-right: 3px;
+            
+        }
+    </style>
+    <title>Smiley</title>
 </head>
 <body>
-<input type="number" class="num"><button class="btn">Click me</button>
-<div class="smiley">
-
-</div>
     
-<script src="./main.js"></script>    
+    <span>Enter a number</span>
+    <input class="num"></input><button class="btn">submit</button>
+    <ul class="smiley"></ul>
+    <script src="./main.js"></script>
+    <p class="msg"></p>
 </body>
 </html>
+
