@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .mainGame {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .guess {
+            display: block;
+            text-align: center;
+            font-size: 30px;
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="mainGame">
+        <h1>Guess The Letter</h1>  
+        <span>
+            <input class="guess" type="text" placeholder="?" disabled="disabled">
+        </span>
+        <h3 class="guidance">Guess a letter</h3> 
+        <h2>Keys guessed</h2>
+        <span class="userGuess"></span>
+    </div>
+
+</body>
+<script src="./main.js"></script>
+</html>
