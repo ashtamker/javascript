@@ -14,10 +14,7 @@ function printName() {
 
 function printHeroes(heroes, printFunc) {
     //add your code here
-    printFunc(heroes);
-
+    heroes.forEach(h => {printFunc.call(h)});
 }
-printName.call(batman);
-//printHeroes.call(superHeroes,printName());
 
-const allHero = printHeroes.call(superHeroes,printName);
+printHeroes(superHeroes,printName);
