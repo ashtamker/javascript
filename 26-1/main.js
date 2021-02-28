@@ -4,13 +4,13 @@
 
 //**************************************** */
 //q-2
-const myObj = {
-    name: "Timmy", 
-    greet: () => {   
-    console.log(`Hello ${myObj.name}`);
-    },
-};
-myObj.greet()
+// const myObj = {
+//     name: "Timmy", 
+//     greet: () => {   
+//     console.log(`Hello ${myObj.name}`);
+//     },
+// };
+// myObj.greet()
 
 // print only hello
 // point nothing
@@ -36,8 +36,10 @@ myObj.greet()
 //************************ */
 // q-5
 
-// document.querySelector(".element").addEventListener(() => {
+// document.querySelector(".element").addEventListener((e) => {
 //     console.log(this); 
 // });
 
+
+// if we make div log the father of .element
 // chenge form arrow function to reguler function  
