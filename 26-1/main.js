@@ -4,13 +4,13 @@
 
 //**************************************** */
 //q-2
-// const myObj = {
-//     name: "Timmy", 
-//     greet: () => {   
-//     console.log(`Hello ${this.name}`);
-//     },
-// };
-// myObj.greet()
+const myObj = {
+    name: "Timmy", 
+    greet: () => {   
+    console.log(`Hello ${myObj.name}`);
+    },
+};
+myObj.greet()
 
 // print only hello
 // point nothing
@@ -36,8 +36,8 @@
 //************************ */
 // q-5
 
-document.querySelector(".element").addEventListener(() => {
-    console.log(this); 
-});
+// document.querySelector(".element").addEventListener(() => {
+//     console.log(this); 
+// });
 
-// 
+// chenge form arrow function to reguler function  
