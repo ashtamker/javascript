@@ -1,4 +1,4 @@
-const baseEndpoint = `https://swapi.dev/api/people`;
+const baseEndpoint = 'https://swapi.dev/api/people';
 const container = document.querySelector('#container');
 
 const getUsers = async () => {
