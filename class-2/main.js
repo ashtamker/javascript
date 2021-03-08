@@ -30,11 +30,12 @@ let car4 =  new Car ('Susita', 28);
 
 carArr.push(car1,car2,car3,car4);
 
-let max = carArr.map(car => car.getSpeed()).reduce((maxSpeed, newSpeed) => maxSpeed > newSpeed ? maxSpeed : newSpeed, 0);
-console.log(max);
+let max = carArr.reduce((max,car) => {
+    return max.speed > car.speed ? max : car;
+})
 
 carArr.sort((c1, c2) => c1.getSpeed() - c2.getSpeed());
-
+console.log(max);
 console.log(carArr);
 car2.print();
 car2.setSpeed(280);
