@@ -8,14 +8,17 @@ class sortNumber {
         return true;
         }
         else return false;
+
+
+    }
+     isPrim(num)  {
+        for(let i = 2, s = Math.sqrt(num); i <= s; i++)
+            if(num % i === 0) return false; 
+        return true;
     }
 }
 
-const isPrime = num => {
-    for(let i = 2, s = Math.sqrt(num); i <= s; i++)
-        if(num % i === 0) return false; 
-    return true;
-}
+
 
 
 let num1 = new sortNumber;
